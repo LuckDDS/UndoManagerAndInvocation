@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45E6EC8424A7333B000BA88D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6EC8324A7333B000BA88D /* AppDelegate.m */; };
+		45E6EC8724A7333B000BA88D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6EC8624A7333B000BA88D /* SceneDelegate.m */; };
+		45E6EC8A24A7333B000BA88D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6EC8924A7333B000BA88D /* ViewController.m */; };
+		45E6EC8D24A7333B000BA88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E6EC8B24A7333B000BA88D /* Main.storyboard */; };
+		45E6EC8F24A7333D000BA88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E6EC8E24A7333D000BA88D /* Assets.xcassets */; };
+		45E6EC9224A7333D000BA88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E6EC9024A7333D000BA88D /* LaunchScreen.storyboard */; };
+		45E6EC9524A7333D000BA88D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6EC9424A7333D000BA88D /* main.m */; };
+		45E6EC9F24A7333D000BA88D /* UndoInvocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6EC9E24A7333D000BA88D /* UndoInvocationTests.m */; };
+		45E6ECB224A733BA000BA88D /* UndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6ECAB24A733BA000BA88D /* UndoManager.m */; };
+		45E6ECB324A733BA000BA88D /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6ECAD24A733BA000BA88D /* InvocationViewController.m */; };
+		45E6ECB424A733BA000BA88D /* Invocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6ECAE24A733BA000BA88D /* Invocation.m */; };
+		45E6ECB524A733BA000BA88D /* UndoAndInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6ECAF24A733BA000BA88D /* UndoAndInvocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45E6EC9B24A7333D000BA88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E6EC7724A7333B000BA88D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E6EC7E24A7333B000BA88D;
+			remoteInfo = UndoInvocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45E6EC7F24A7333B000BA88D /* UndoInvocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoInvocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E6EC8224A7333B000BA88D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45E6EC8324A7333B000BA88D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45E6EC8524A7333B000BA88D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		45E6EC8624A7333B000BA88D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		45E6EC8824A7333B000BA88D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45E6EC8924A7333B000BA88D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45E6EC8C24A7333B000BA88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45E6EC8E24A7333D000BA88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45E6EC9124A7333D000BA88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45E6EC9324A7333D000BA88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E6EC9424A7333D000BA88D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45E6EC9A24A7333D000BA88D /* UndoInvocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndoInvocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E6EC9E24A7333D000BA88D /* UndoInvocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndoInvocationTests.m; sourceTree = "<group>"; };
+		45E6ECA024A7333D000BA88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E6ECAA24A733BA000BA88D /* Invocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Invocation.h; sourceTree = "<group>"; };
+		45E6ECAB24A733BA000BA88D /* UndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoManager.m; sourceTree = "<group>"; };
+		45E6ECAC24A733BA000BA88D /* UndoAndInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoAndInvocation.h; sourceTree = "<group>"; };
+		45E6ECAD24A733BA000BA88D /* InvocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationViewController.m; sourceTree = "<group>"; };
+		45E6ECAE24A733BA000BA88D /* Invocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Invocation.m; sourceTree = "<group>"; };
+		45E6ECAF24A733BA000BA88D /* UndoAndInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoAndInvocation.m; sourceTree = "<group>"; };
+		45E6ECB024A733BA000BA88D /* UndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoManager.h; sourceTree = "<group>"; };
+		45E6ECB124A733BA000BA88D /* InvocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45E6EC7C24A7333B000BA88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E6EC9724A7333D000BA88D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45E6EC7624A7333B000BA88D = {
+			isa = PBXGroup;
+			children = (
+				45E6EC8124A7333B000BA88D /* UndoInvocation */,
+				45E6EC9D24A7333D000BA88D /* UndoInvocationTests */,
+				45E6EC8024A7333B000BA88D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45E6EC8024A7333B000BA88D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45E6EC7F24A7333B000BA88D /* UndoInvocation.app */,
+				45E6EC9A24A7333D000BA88D /* UndoInvocationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E6EC8124A7333B000BA88D /* UndoInvocation */ = {
+			isa = PBXGroup;
+			children = (
+				45E6EC8224A7333B000BA88D /* AppDelegate.h */,
+				45E6EC8324A7333B000BA88D /* AppDelegate.m */,
+				45E6EC8524A7333B000BA88D /* SceneDelegate.h */,
+				45E6EC8624A7333B000BA88D /* SceneDelegate.m */,
+				45E6ECA924A733BA000BA88D /* NSInvocation */,
+				45E6EC8824A7333B000BA88D /* ViewController.h */,
+				45E6EC8924A7333B000BA88D /* ViewController.m */,
+				45E6EC8B24A7333B000BA88D /* Main.storyboard */,
+				45E6EC8E24A7333D000BA88D /* Assets.xcassets */,
+				45E6EC9024A7333D000BA88D /* LaunchScreen.storyboard */,
+				45E6EC9324A7333D000BA88D /* Info.plist */,
+				45E6EC9424A7333D000BA88D /* main.m */,
+			);
+			path = UndoInvocation;
+			sourceTree = "<group>";
+		};
+		45E6EC9D24A7333D000BA88D /* UndoInvocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				45E6EC9E24A7333D000BA88D /* UndoInvocationTests.m */,
+				45E6ECA024A7333D000BA88D /* Info.plist */,
+			);
+			path = UndoInvocationTests;
+			sourceTree = "<group>";
+		};
+		45E6ECA924A733BA000BA88D /* NSInvocation */ = {
+			isa = PBXGroup;
+			children = (
+				45E6ECAA24A733BA000BA88D /* Invocation.h */,
+				45E6ECAB24A733BA000BA88D /* UndoManager.m */,
+				45E6ECAC24A733BA000BA88D /* UndoAndInvocation.h */,
+				45E6ECAD24A733BA000BA88D /* InvocationViewController.m */,
+				45E6ECAE24A733BA000BA88D /* Invocation.m */,
+				45E6ECAF24A733BA000BA88D /* UndoAndInvocation.m */,
+				45E6ECB024A733BA000BA88D /* UndoManager.h */,
+				45E6ECB124A733BA000BA88D /* InvocationViewController.h */,
+			);
+			path = NSInvocation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45E6EC7E24A7333B000BA88D /* UndoInvocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E6ECA324A7333D000BA88D /* Build configuration list for PBXNativeTarget "UndoInvocation" */;
+			buildPhases = (
+				45E6EC7B24A7333B000BA88D /* Sources */,
+				45E6EC7C24A7333B000BA88D /* Frameworks */,
+				45E6EC7D24A7333B000BA88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UndoInvocation;
+			productName = UndoInvocation;
+			productReference = 45E6EC7F24A7333B000BA88D /* UndoInvocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45E6EC9924A7333D000BA88D /* UndoInvocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E6ECA624A7333D000BA88D /* Build configuration list for PBXNativeTarget "UndoInvocationTests" */;
+			buildPhases = (
+				45E6EC9624A7333D000BA88D /* Sources */,
+				45E6EC9724A7333D000BA88D /* Frameworks */,
+				45E6EC9824A7333D000BA88D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E6EC9C24A7333D000BA88D /* PBXTargetDependency */,
+			);
+			name = UndoInvocationTests;
+			productName = UndoInvocationTests;
+			productReference = 45E6EC9A24A7333D000BA88D /* UndoInvocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45E6EC7724A7333B000BA88D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "九天";
+				TargetAttributes = {
+					45E6EC7E24A7333B000BA88D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					45E6EC9924A7333D000BA88D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 45E6EC7E24A7333B000BA88D;
+					};
+				};
+			};
+			buildConfigurationList = 45E6EC7A24A7333B000BA88D /* Build configuration list for PBXProject "UndoInvocation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45E6EC7624A7333B000BA88D;
+			productRefGroup = 45E6EC8024A7333B000BA88D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45E6EC7E24A7333B000BA88D /* UndoInvocation */,
+				45E6EC9924A7333D000BA88D /* UndoInvocationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E6EC7D24A7333B000BA88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E6EC9224A7333D000BA88D /* LaunchScreen.storyboard in Resources */,
+				45E6EC8F24A7333D000BA88D /* Assets.xcassets in Resources */,
+				45E6EC8D24A7333B000BA88D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E6EC9824A7333D000BA88D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45E6EC7B24A7333B000BA88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E6ECB324A733BA000BA88D /* InvocationViewController.m in Sources */,
+				45E6ECB524A733BA000BA88D /* UndoAndInvocation.m in Sources */,
+				45E6EC8A24A7333B000BA88D /* ViewController.m in Sources */,
+				45E6EC8424A7333B000BA88D /* AppDelegate.m in Sources */,
+				45E6ECB224A733BA000BA88D /* UndoManager.m in Sources */,
+				45E6ECB424A733BA000BA88D /* Invocation.m in Sources */,
+				45E6EC9524A7333D000BA88D /* main.m in Sources */,
+				45E6EC8724A7333B000BA88D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E6EC9624A7333D000BA88D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E6EC9F24A7333D000BA88D /* UndoInvocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45E6EC9C24A7333D000BA88D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E6EC7E24A7333B000BA88D /* UndoInvocation */;
+			targetProxy = 45E6EC9B24A7333D000BA88D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45E6EC8B24A7333B000BA88D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E6EC8C24A7333B000BA88D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45E6EC9024A7333D000BA88D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E6EC9124A7333D000BA88D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45E6ECA124A7333D000BA88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45E6ECA224A7333D000BA88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45E6ECA424A7333D000BA88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MHLKJH3J;
+				INFOPLIST_FILE = UndoInvocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.UndoInvocation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E6ECA524A7333D000BA88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MHLKJH3J;
+				INFOPLIST_FILE = UndoInvocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.UndoInvocation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45E6ECA724A7333D000BA88D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MHLKJH3J;
+				INFOPLIST_FILE = UndoInvocationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.UndoInvocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoInvocation.app/UndoInvocation";
+			};
+			name = Debug;
+		};
+		45E6ECA824A7333D000BA88D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MHLKJH3J;
+				INFOPLIST_FILE = UndoInvocationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--.UndoInvocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoInvocation.app/UndoInvocation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E6EC7A24A7333B000BA88D /* Build configuration list for PBXProject "UndoInvocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E6ECA124A7333D000BA88D /* Debug */,
+				45E6ECA224A7333D000BA88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E6ECA324A7333D000BA88D /* Build configuration list for PBXNativeTarget "UndoInvocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E6ECA424A7333D000BA88D /* Debug */,
+				45E6ECA524A7333D000BA88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E6ECA624A7333D000BA88D /* Build configuration list for PBXNativeTarget "UndoInvocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E6ECA724A7333D000BA88D /* Debug */,
+				45E6ECA824A7333D000BA88D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45E6EC7724A7333B000BA88D /* Project object */;
+}
